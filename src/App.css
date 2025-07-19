@@ -1,0 +1,123 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #3b82f6);
+  margin: 0;
+  padding: 0;
+  color: #f1f5f9;
+}
+
+
+.app-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.app-container h1{
+  text-align: center;
+  font-family: Roboto;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;  
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-bottom: 2rem;
+}
+
+.input-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+select, input[type="date"] {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: none;
+  background: #fff;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+select:hover, input[type="date"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(255,255,255,0.4);
+}
+
+/* Calendar Preview */
+.preview {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 2);
+  margin-bottom: 2rem;
+}
+
+.preview h3 {
+  margin-bottom: 1rem;
+}
+
+.recurring-dates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.recurring-date {
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #333;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.recurring-date:hover {
+  transform: scale(1.1);
+  background: #ffedbc;
+}
+
+/* Scrollable Calendars */
+.calendar-scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.calendar-box {
+  min-width: 300px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 16px;
+  padding: 1rem;
+  display: inline-block;
+  color: white;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.calendar-box:hover {
+  transform: scale(1.05);
+}

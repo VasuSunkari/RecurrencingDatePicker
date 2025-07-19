@@ -1,0 +1,35 @@
+.calendar-scroll-container {
+  max-height: 400px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.calendar-month {
+  margin-bottom: 20px;
+}
+
+.calendar-month h4 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.calendar-month table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar-month th,
+.calendar-month td {
+  width: 14.2%;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ede7e7;
+}
+
+.calendar-month td.highlight {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
