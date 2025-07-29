@@ -1,8 +1,7 @@
-// src/components/Preview.jsx
 import React, { useContext } from 'react';
 import { RecurringContext } from '../context/RecurringContext';
 import { calculateRecurringDates } from '../utils/calculateRecurringDates';
-import './Preview.css'; // Make sure the CSS is applied
+import './Preview.css'; 
 
 const Preview = () => {
   const { frequency, startDate, endDate } = useContext(RecurringContext);

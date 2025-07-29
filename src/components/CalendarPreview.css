@@ -1,112 +1,4 @@
-/* .calendar-scroll-container {
-  max-height: 400px;
-  overflow-y: scroll;
-  border: 1px solid #ccc;
-  padding: 10px;
-}
 
-.calendar-month {
-  margin-bottom: 20px;
-}
-
-.calendar-month h4 {
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.calendar-month table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.calendar-month th,
-.calendar-month td {
-  width: 14.2%;
-  text-align: center;
-  padding: 5px;
-  border: 1px solid #ede7e7;
-}
-
-.calendar-month td.highlight {
-  background-color: #4caf50;
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
-} */
-
-
-/* .calendar-scroll-container {
-  max-height: 400px;
-  overflow-y: auto;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #fafafa;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 12px;
-}
-
-.calendar-month {
-  margin-bottom: 20px;
-  background-color: white;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-}
-
-.calendar-month h4 {
-  text-align: center;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-  color: #333;
-}
-
-.calendar-month table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-}
-
-.calendar-month th {
-  padding: 8px 0;
-  background-color: #f5f5f5;
-  color: #555;
-  font-weight: 600;
-  border: 1px solid #ddd;
-}
-
-.calendar-month td {
-  width: 14.2%;
-  text-align: center;
-  padding: 10px;
-  height: 50px;
-  vertical-align: middle;
-  border: 1px solid #f0f0f0;
-  color: #333;
-  background-color: #fff;
-  transition: background-color 0.3s ease;
-}
-
-.calendar-month td:empty {
-  background-color: #fafafa;
-  border: 1px solid #f0f0f0;
-}
-
-.calendar-month td.highlight {
-  background-color: #4caf50;
-  color: white;
-  font-weight: bold;
-  border-radius: 8px;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.calendar-month td:hover:not(:empty):not(.highlight) {
-  background-color: #e0f2f1;
-  cursor: pointer;
-} */
-
-
-/* Base calendar wrapper */
 .calendar-preview {
   margin-top: 14rem; /* Increased space above calendar */
   background: #fff;
@@ -206,7 +98,6 @@
   border: 1px solid #ddd;
 }
 
-/* Calendar day cells */
 .calendar-month td {
   width: 14.2%;
   text-align: center;
@@ -219,13 +110,11 @@
   transition: background-color 0.3s ease;
 }
 
-/* Empty cells (before or after month days) */
 .calendar-month td:empty {
   background-color: #fafafa;
   border: 1px solid #f0f0f0;
 }
 
-/* Highlighted recurring date */
 .calendar-month td.highlight {
   background-color: #4caf50;
   color: white;
@@ -234,7 +123,6 @@
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* On hover - optional for better UX */
 .calendar-month td:hover:not(:empty):not(.highlight) {
   background-color: #e0f2f1;
   cursor: pointer;

@@ -1,7 +1,6 @@
 import React from 'react';
 import './CalendarPreview.css';
 
-// Recurring dates calculation from RecurringDatePicker
 const generateRecurringDates = (startDate, endDate, frequency) => {
   const dates = [];
   if (!startDate || !endDate) return dates;
@@ -30,11 +29,11 @@ const CalendarPreview = ({ startDate, endDate, frequency }) => {
 
   const dateSet = new Set(dates);
 
-  // Get start & end year/month
+
   const [startYear, startMonth] = dates[0].split('-').map(Number);
   const [endYear, endMonth] = dates[dates.length - 1].split('-').map(Number);
 
-  // Make array of all first-of-month Date objects in range
+
   const months = [];
   let year = startYear, month = startMonth - 1;
   while (year < endYear || (year === endYear && month <= endMonth - 1)) {

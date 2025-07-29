@@ -19,7 +19,7 @@ const RecurringDatePicker = () => {
         top: datesContainerRef.current.scrollHeight,
         behavior: 'smooth'
       });
-    }, 100); // delay to allow layout reflow
+    }, 100); 
   } else {
     datesContainerRef.current.scrollTo({ top: 0, behavior: 'smooth' });
   }
@@ -27,7 +27,6 @@ const RecurringDatePicker = () => {
 
 
 
-  // "dates" is for previewing the raw list
   const generateRecurringDates = (startDate, endDate, frequency) => {
     const dates = [];
     if (!startDate || !endDate) return dates;
@@ -49,7 +48,6 @@ const RecurringDatePicker = () => {
     }
     return dates;
   };
-
   const recurringDates = generateRecurringDates(startDate, endDate, frequency);
 
   return (
